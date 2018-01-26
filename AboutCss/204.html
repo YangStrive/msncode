@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body{
+		position: relative;
+	}
+	.box{
+		width: 100px;
+		height: 100px;
+		padding: 10px;
+		border: 10px solid #ccc;
+		float: left;
+		line-height: 100px;
+	}
+	.box:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.box2{
+		background-color: #6699ee;
+	}
+	.box3{
+		width: 100px;
+		height: 100px;
+		padding: 10px;
+		border: 10px solid #ccc;
+		box-sizing: border;
+		position:absolute;
+		line-height: 100px;
+	}
+	.box4{
+		background-color: #6699ee;
+	}
+</style>
+<body>
+<div class="box">
+	我浮动
+</div>
+<div class="box2">
+	<p>所谓文档流就是我们通过浏览器看到的页面，页面上的元素都是按照从上到下，从左到右的顺序排列，就是文档流。</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="box3">
+	我绝对定位
+</div>
+<div class="box4">
+	<p>所谓文档流就是我们通过浏览器看到的页面，页面上的元素都是按照从上到下，从左到右的顺序排列，就是文档流。</p>
+</div>
+</body>
+</html>
