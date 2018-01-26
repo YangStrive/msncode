@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function a(){
+		return {a:3};
+	}
+	var c = new a();//{a:3}
+	console.log(c instanceof a);//false
+
+	function y(){
+		return 3;
+	}
+	var f = new y();
+	console.log(f instanceof y);//true
+	function Base() { 
+	    this.str = "aa";
+	    return 1;
+	    // return "a";
+	    // return true;
+	}
+	var e = new Base(); 
+	console.dir(e); // { str: 'aa'}
+
+	function Base() { 
+	    this.str = "aa";
+	    return [1];
+	    // return {a:1};
+	}
+	var f = new Base(); 
+	console.dir(f); // [1] or {a: 1}  
+	
+	function Base() { 
+	    this.str = "aa";
+	    return {a:1};
+	}
+	var g = new Base(); 
+	console.dir(g); // [1] or {a: 1}  
+</script>
+</body>
+</html>
